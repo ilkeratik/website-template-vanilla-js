@@ -169,6 +169,10 @@ hr{
     border-radius: 100px;
 }
 
+.single-prj > p{
+    overflow: auto;
+}
+
 #contact{
 }
 
