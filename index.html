@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- viewport setting, devices cannot set by itself, this will prevent width conflict -->
+    <title>Ilker Atik Personal Page</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap&family=Montserrat" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/73e9cd75d3.js" crossorigin="anonymous"></script> fontawesome script -->
+
+    <script type="text/javascript">
+        function uyari(){
+            alert("This module hasn't done yet :D Iky working... wait for it!");
+        }
+    </script>
+</head>
+<body>
+<header class="clearfix">
+    <div id="header-left">
+        <a href="index.html">
+            <img src="img/kendim.jpg" alt="photo">
+            <h1>ilker Atik</h1>
+        </a>
+
+    </div>
+    <div id="header-right">
+        <ul>
+            <li>
+                <a href="index.html">home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#projects">projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">contAct</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div id="main-content">
+    <div id="intro" class="clearfix">
+        <section id="part-1">
+        <h3>Hello!</h3>
+        <h1>I'm <span>ilker Atik</span></h1>
+        <h2>A Freelancer Web Programmer & Designer, Software Engineer</h2>
+        <a href="#link" class="button button-1">Link</a>
+        <a href="#link" class="button button-2">Link</a>
+        </section>
+        <section id="part-2">
+        <div>
+            <img id="img-jumbo" src="img/clouds.jpeg" alt="iky">
+        </div>
+        </section>
+    </div>
+
+    <hr>
+    <div id="about">
+        <h1 class="shadow-text">About</h1>
+        <img src="img/kendim.jpg" alt="cv">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <hr>
+    <div id="projects">
+        <h1 class="shadow-text">Projects</h1>
+        <div class="single-prj clearfix">
+            <img src="im" alt="cv">
+            <h1>Project Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="single-prj clearfix">
+            <img src="img/skyview.jpg" alt="cv">
+            <h1>Project Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <hr>
+    <div id="contact">
+        <h1 class="shadow-text">Contact</h1>
+        <form id="contact-form">
+            <label for="fname">Your Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+            <label>Topic</label><br>
+            <input type="radio" id="business" name="topic" value="business">
+            <label for="business">Business</label>
+            <input type="radio" id="personal" name="topic" value="personal">
+            <label for="personal">Personal</label>
+            <input type="radio" id="other" name="topic" value="other">
+            <label for="other">Other</label><br>
+            <label for="message">Message</label><br>
+            <textarea rows="7" cols="50" name="comment" id="message" name="message">Message...</textarea><br>
+            <input type="submit" onclick="uyari()" value="Submit">
+        </form>
+
+    </div>
+
+
+</div> <!-- end of main content -->
+<footer>
+    <div id="footer-p1" class="foo_el">
+
+    </div>
+
+    <div id="footer-p2" class="foo_el">
+
+    </div>
+
+    <div id="copyright" class="foo_el">
+        2020 &copy Copyright Ilker Atik
+    </div>
+</footer>
+</body>
+</html>
