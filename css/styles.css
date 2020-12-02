@@ -10,6 +10,7 @@ body,html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 #main-content{
@@ -129,6 +130,7 @@ hr{
 
 #part-2 #img-jumbo{
     width: 70%;
+    max-width: 100%;
     border-radius: 400px;
 }
 
@@ -143,6 +145,7 @@ hr{
 
 #about > img{
     height: 200px;
+    max-width: 100%;
     border-radius: 500px;
 }
 
@@ -161,7 +164,8 @@ hr{
 
 .single-prj > img{
     margin: 0 20px;
-    height: 200px;
+    height: 100px;
+    max-width: 100%;
     border-radius: 100px;
 }
 
@@ -171,7 +175,7 @@ hr{
 form{
     padding: 10px 10px;
     display: inline-block;
-    background-color: #222831;
+    background-image: url("../img/space.png");
     border-radius: 20px;
 }
 
