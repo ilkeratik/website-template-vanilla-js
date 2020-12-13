@@ -1,0 +1,105 @@
+body{
+}
+
+.container{
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px); /* background blur */
+}
+
+#sidebar{
+    display: none;
+    width: 20%;
+}
+
+#posts > h1{
+    padding-top: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.post-item{
+    display: inline-block;
+    margin: 20px 30px 0 0;
+    position: relative;
+    background: url(../img/icon.png) no-repeat center;
+    height: 150px;
+    width: 150px;
+}
+
+#post-title:hover{
+    height: 100%;
+    opacity: 0.9;
+}
+
+#post-title{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 3;
+    background-color: black;
+    opacity: 0.8;
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .post-item{
+        height: 250px;
+        width: 250px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #navbar{
+        display: none;
+    }
+
+    #sidebar{
+        display: inline-block;
+        padding-top: 40px;
+        float: left;
+    }
+
+    #sidebar img{
+        vertical-align:middle;
+        height: 80px;
+        border-radius: 50px;
+    }
+
+    #sidebar ul{
+        list-style: none;
+        padding-inline-start: 0;
+    }
+
+    #sidebar li{
+        font-size: 1.2em;
+        font-weight: bolder;
+        padding: 10px 0px;
+    }
+
+    #sidebar li:hover{
+        background-color: #0a043c;
+        transition: 0.7s;
+    }
+
+    #posts{
+        padding-top: 80px;
+        width: 80%;
+        float: left;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

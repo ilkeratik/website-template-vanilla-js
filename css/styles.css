@@ -1,29 +1,19 @@
 
-body,html{
+body{
+    margin: 0;
     color: white;
     font-family: "Monserrat", sans-serif;
-    background-color: black;
     text-align: center;
-    box-sizing: border-box;
-    margin: 8px 0 0;
+
     background-image: url("../img/space.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
 }
 
-#main-content{
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(8px);
-
+*{
+    box-sizing: border-box;
 }
-
-
-header{
-    background-color: transparent;
-    font-family: 'Major Mono Display', monospace;
-  }
 
 a{
     text-decoration: none;
@@ -32,83 +22,101 @@ a{
 
 footer{
      background-color: #1b1e21;
- }
+}
 
 hr{
     border: 0;
-    border-top: 6px dotted #bbbbbb;
-    width: 3%;
+    border-top: 3px solid #bbbbbb;
+    width: 40px;
     margin-block-start: 3em;
     margin-block-end: 2em;
 }
 
-.background {
+#main-content{
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px); /* background blur */
+    margin-bottom: 20px;
 }
 
-#header-left img{
+/*------------navbar-----------*/
+
+#navbar,#sidebar{
+    background-color: transparent;
+    font-family: 'Major Mono Display', monospace;
+}
+
+#nav-left img{
     vertical-align:middle;
     height: 80px;
     border-radius: 50px;
 }
 
-#header-left h1{
+#nav-left h1{
     display: inline-block;
     vertical-align:middle;
 }
 
-#header-right ul{
+.active-page{
+    background-color: #370617;
+}
+
+#nav-right ul{
     list-style: none;
     padding-inline-start: 0;
 }
 
-#header-right li{
+#nav-right li{
     font-size: 1.2em;
     font-weight: bolder;
     padding: 10px 30px;
 }
 
-#header-right li:hover{
-    background-color: #0a043c;
+#nav-right li:hover{
+    background: #0a043c;
     transition: 0.7s;
 }
 
-#main-content{
-    margin-bottom: 20px;
-}
-
+/*------------intro-----------*/
 #intro{
-
 }
 
-#part-1, #part-2{
+#intro-1, #intro-2{
     padding-top: 70px;
     margin-bottom: 30px;
 }
 
-#part-1 > h3{
+#intro-1 > h3{
     color: #bbbbbb;
     text-transform: uppercase;
 }
 
-#part-1 > h1{
+#intro-1 > h1{
     font-size: 2rem;
     line-height: 0;
     margin-block-start: 0.60em;/* line height property */
     margin-block-end: 0.60em;
 }
 
-#part-1 > h1 > span{
+#intro-1 > h1 > span{
     font-size: 2rem;
     font-family: 'Major Mono Display', monospace;
     color: #03506f;
 }
 
-#part-1 > h2{
+#intro-1 > h2{
     font-size: 0.8rem;
     font-weight: normal;
     margin-bottom: 30px;
 }
 
+#img-jumbo{
+    width: 70%;
+    max-width: 100%;
+    border-radius: 400px;
+}
+
+
+/*------------buttons-----------*/
 .button{
     padding: 20px 40px;
     margin-right: 10px;
@@ -116,22 +124,15 @@ hr{
 }
 
 .button:hover{
-    box-sizing: border-box;
     box-shadow: 0 0 5px white;
 }
 
 .button-1{
-    background-color: #0f4c75;
+    background-color: #0a043c;
 }
 
 .button-2{
-    background-color: #3282b8;
-}
-
-#part-2 #img-jumbo{
-    width: 70%;
-    max-width: 100%;
-    border-radius: 400px;
+    background-color: #370617;
 }
 
 .shadow-text{
@@ -139,6 +140,7 @@ hr{
     margin-bottom: 60px;
 }
 
+/*------------about-----------*/
 #about{
 }
 
@@ -154,9 +156,7 @@ hr{
     width: 50%;
 }
 
-#copyright{
-}
-
+/*------------projects-----------*/
 .single-prj{
     text-align: left;
     margin: 0 80px;
@@ -166,13 +166,25 @@ hr{
     margin: 0 20px;
     height: 100px;
     max-width: 100%;
-    border-radius: 100px;
+    border-radius: 30%;
 }
 
 .single-prj > p{
     overflow: auto;
 }
 
+/*------------social-----------*/
+#social >  div{
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#linkedin{
+    margin-left: -20px !important; 
+}
+
+
+/*------------contact-----------*/
 #contact{
 }
 
@@ -199,36 +211,36 @@ input{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .clearfix:after{
+    .clearfix:after{ /* for floating elements */
         content: "";
         display: block;
         clear: both;
     }
 
-    #header-right li{
+    #nav-right li{
         display: inline-block;
         padding: 25px 30px;
     }
 
-    #header-right{
+    #nav-right{
         float: right;
     }
 
-    #header-left{
+    #nav-left{
         float: left;
         margin-top: 5px;
         margin-left: 20px;
     }
 
-    #header-left img{
+    #nav-left img{
     }
 
-    #part-2{
+    #intro-2{
         float: right;
         width: 50%;
     }
 
-    #part-1 {
+    #intro-1 {
         float: right;
         width: 50%;
     }
