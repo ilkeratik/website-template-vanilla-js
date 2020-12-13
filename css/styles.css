@@ -41,6 +41,7 @@ hr{
 /*------------navbar-----------*/
 
 #navbar,#sidebar{
+    margin-top: 8px;
     background-color: transparent;
     font-family: 'Major Mono Display', monospace;
 }
