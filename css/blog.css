@@ -21,7 +21,7 @@ body{
     display: inline-block;
     margin: 20px 30px 0 0;
     position: relative;
-    background: url(../img/icon.png) no-repeat center;
+    background: url(../img/icon.webp) no-repeat center;
     height: 150px;
     width: 150px;
 }
