@@ -9,6 +9,9 @@ body{
 #sidebar{
     display: none;
     width: 20%;
+    margin-top: 8px;
+    background-color: transparent;
+    font-family: 'Major Mono Display', monospace;
 }
 
 #posts > h1{

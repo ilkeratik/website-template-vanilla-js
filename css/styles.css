@@ -40,19 +40,25 @@ hr{
 
 /*------------navbar-----------*/
 
-#navbar,#sidebar{
-    margin-top: 8px;
-    background-color: transparent;
+#navbar{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Major Mono Display', monospace;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
 }
 
-#nav-left img{
+
+#intro-brand img{
     vertical-align:middle;
     height: 80px;
     border-radius: 50px;
 }
 
-#nav-left h1{
+#intro-brand h1{
     display: inline-block;
     vertical-align:middle;
 }
@@ -61,59 +67,106 @@ hr{
     background-color: #370617;
 }
 
-#nav-right ul{
+#intro-menu ul{
     list-style: none;
     padding-inline-start: 0;
 }
 
-#nav-right li{
+#intro-menu li{
+    display: inline-block;
+    position: relative;
     font-size: 1.2em;
     font-weight: bolder;
     padding: 10px 30px;
 }
 
-#nav-right li:hover{
-    background: #0a043c;
-    transition: 0.7s;
+#intro-menu li:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
-/*------------intro-----------*/
-#intro{
+#intro-menu li:hover:after{
+    width: 100%;
+    left: 0;
+
 }
 
-#intro-1, #intro-2{
+.arrow{
+    position: absolute;
+    bottom: 30px;
+}
+
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    border-color: #0077b6;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 1.5s infinite;
+}
+
+.arrow span:nth-child(2){
+    border-color: #023e8a;
+    animation-delay: 0.2s;
+}
+
+.arrow span:nth-child(3){
+    border-color: #03045e;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/*------------greet-----------*/
+
+#greet{
     padding-top: 70px;
     margin-bottom: 30px;
 }
 
-#intro-1 > h3{
+#greet > h3{
     color: #bbbbbb;
     text-transform: uppercase;
 }
 
-#intro-1 > h1{
+#greet > h1{
     font-size: 2rem;
     line-height: 0;
     margin-block-start: 0.60em;/* line height property */
     margin-block-end: 0.60em;
 }
 
-#intro-1 > h1 > span{
+#greet > h1 > span{
     font-size: 2rem;
     font-family: 'Major Mono Display', monospace;
     color: #03506f;
 }
 
-#intro-1 > h2{
+#greet > h2{
     font-size: 0.8rem;
     font-weight: normal;
     margin-bottom: 30px;
-}
-
-#img-jumbo{
-    width: 70%;
-    max-width: 100%;
-    border-radius: 400px;
 }
 
 
@@ -163,7 +216,7 @@ hr{
     margin: 0 80px;
 }
 
-.single-prj > img{
+.single-prj a img{
     margin: 0 20px;
     height: 100px;
     max-width: 100%;
@@ -218,32 +271,8 @@ input{
         clear: both;
     }
 
-    #nav-right li{
-        display: inline-block;
+    #intro-menu li{
         padding: 25px 30px;
-    }
-
-    #nav-right{
-        float: right;
-    }
-
-    #nav-left{
-        float: left;
-        margin-top: 5px;
-        margin-left: 20px;
-    }
-
-    #nav-left img{
-    }
-
-    #intro-2{
-        float: right;
-        width: 50%;
-    }
-
-    #intro-1 {
-        float: right;
-        width: 50%;
     }
 
     .single-prj:nth-child(odd) img{
