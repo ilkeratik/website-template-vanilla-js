@@ -1,7 +1,15 @@
 body{
 }
 
+#post-content h1{
+    color: white;
+    background-color: #0a043c;
+    margin-block-end: 0;
+    line-height: 1.5;
+}
+
 #post-content > p{
+    margin-block-start: 0;
     text-align: left;
     padding: 60px;
     background: white;

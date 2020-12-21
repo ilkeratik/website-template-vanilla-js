@@ -15,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap&family=Montserrat"
           rel="stylesheet">
-    <!-- <script src="https://kit.fontawesome.com/73e9cd75d3.js" crossorigin="anonymous"></script> fontawesome script -->
 
     <script src="https://kit.fontawesome.com/73e9cd75d3.js" crossorigin="anonymous"></script>
 
@@ -27,122 +26,125 @@
 </head>
 
 <body>
+<div class="global-container">
+    <section id="intro-container">
+        <div class="intro-brand">
+            <a href="index.html">
+                <img src="img/kendim.webp" alt="photo">
+                <h1>ilker Atik</h1>
+            </a>
 
-<section id="navbar" class="">
-    <div id="intro-brand">
-        <a href="index.html">
-            <img src="img/kendim.webp" alt="photo">
-            <h1>ilker Atik</h1>
-        </a>
+        </div>
 
-    </div>
+        <div id="intro-menu" class="menu">
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
-    <div id="intro-menu">
-        <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
+                <li>
+                    <a href="#contact">ContAct</a>
+                </li>
 
-            <li>
-                <a href="#contact">ContAct</a>
-            </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
 
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="arrow">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</section>
-
-<section id="main-content">
-
-    <section id="greet">
-        <h3>Hello!</h3>
-        <h1>I'm <span>ilker Atik</span></h1>
-        <h2>A Freelancer Web Programmer & Designer, Software Engineer</h2>
-        <a href="single-post.html" class="button button-1">Latest Post >></a>
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </section>
 
-    <hr>
-    <div id="about">
-        <h1 class="shadow-text">About</h1>
-        <img src="img/kendim.webp" alt="cv">
-        <p>I'm a software engineering student at Fırat University.<br>I had been in Portugal for a year within the Erasmus program.<br> I've travelled many countries... <br>I work as a freelancer web designer now.<br>I like to play chess and table tennis and listen to music!
-        </p>
-    </div>
-    <hr>
-    <div id="social">
-        <div id="linkedin">
-            <a href="https://www.linkedin.com/in/ilkeratik/" class="fab fa-5x fa-linkedin"></a>
+    <section id="main-content">
+
+        <section id="greet">
+            <h3>Hello!</h3>
+            <h1>I'm <span>ilker Atik</span></h1>
+            <h2>A Freelancer Web Programmer & Designer, Software Engineer</h2>
+            <a href="single-post.html" class="button button-1">Latest Post >></a>
+        </section>
+
+        <hr>
+        <div id="about">
+            <h1 class="shadow-text">About</h1>
+            <img src="img/kendim.webp" alt="cv">
+            <p>I'm a software engineering student at Fırat University.<br>I had been in Portugal for a year within the
+                Erasmus program.<br> I've travelled many countries... <br>I work as a freelancer web designer now.<br>I
+                like
+                to play chess and table tennis and listen to music!
+            </p>
+        </div>
+        <div id="social">
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/ilkeratik/" class="fab fa-5x fa-linkedin"></a>
+            </div>
+
+            <div id="instagram">
+                <a href="https://www.instagram.com/ilkeratik/" class="fab fa-5x fa-instagram"></a>
+            </div>
+
+            <div id="academia">
+                <a href="https://firat.academia.edu/%C4%B0lkerAtik" class="fas fa-5x fa-pen-nib"></a>
+            </div>
+
+            <div id="facebook">
+                <a href="https://www.facebook.com/atikilker/" class="fab fa-5x fa-facebook"></a>
+            </div>
         </div>
 
-        <div id="instagram">
-            <a href="https://www.instagram.com/ilkeratik/" class="fab fa-5x fa-instagram"></a>
+        <hr>
+        <div id="projects">
+            <h1 class="shadow-text">Projects</h1>
+            <div class="single-prj clearfix">
+                <a href="https://www.hazaryachting.com/">
+                    <img src="img/hzr.webp" alt="cv">
+                </a>
+                <h1>Hazar Yachting</h1>
+                <p>Hazar Yachting is a yacthing charter which located in Antalya/Turkey. I designed the website and
+                    wrote
+                    the content. In the website Wordpress, CSS, HTML are used.</p>
+            </div>
         </div>
 
-        <div id="academia">
-            <a href="https://firat.academia.edu/%C4%B0lkerAtik" class="fas fa-5x fa-pen-nib"></a>
+        <hr>
+        <div id="contact">
+            <h1 class="shadow-text">Contact</h1>
+            <form id="contact-form">
+                <label for="fname">Your Name</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email"><br>
+                <label>Topic</label><br>
+                <input type="radio" id="business" name="topic" value="business">
+                <label for="business">Business</label>
+                <input type="radio" id="personal" name="topic" value="personal">
+                <label for="personal">Personal</label>
+                <input type="radio" id="other" name="topic" value="other">
+                <label for="other">Other</label><br>
+                <label for="message">Message</label><br>
+                <textarea rows="7" name="comment" id="message" name="message">Message...</textarea><br>
+                <input type="submit" onclick="uyari()" value="Submit">
+            </form>
+
         </div>
-
-        <div id="facebook">
-            <a href="https://www.facebook.com/atikilker/" class="fab fa-5x fa-facebook"></a>
-        </div>
+    </section> <!-- end of main content -->
     </div>
+        <footer>
+            <div id="footer-p1" class="foo_el">
 
-    <hr>
-    <div id="projects">
-        <h1 class="shadow-text">Projects</h1>
-        <div class="single-prj clearfix">
-            <a href="https://www.hazaryachting.com/">
-            <img src="img/hzr.webp" alt="cv">
-            </a>
-            <h1>Hazar Yachting</h1>
-            <p>Hazar Yachting is a yacthing charter which located in Antalya/Turkey. I designed the website and wrote
-                the content. In the website Wordpress, CSS, HTML are used.</p>
-        </div>
-    </div>
+            </div>
 
-    <hr>
-    <div id="contact">
-        <h1 class="shadow-text">Contact</h1>
-        <form id="contact-form">
-            <label for="fname">Your Name</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email"><br>
-            <label>Topic</label><br>
-            <input type="radio" id="business" name="topic" value="business">
-            <label for="business">Business</label>
-            <input type="radio" id="personal" name="topic" value="personal">
-            <label for="personal">Personal</label>
-            <input type="radio" id="other" name="topic" value="other">
-            <label for="other">Other</label><br>
-            <label for="message">Message</label><br>
-            <textarea rows="7" name="comment" id="message" name="message">Message...</textarea><br>
-            <input type="submit" onclick="uyari()" value="Submit">
-        </form>
+            <div id="footer-p2" class="foo_el">
 
-    </div>
-</section> <!-- end of main content -->
+            </div>
 
-<footer>
-    <div id="footer-p1" class="foo_el">
-
-    </div>
-
-    <div id="footer-p2" class="foo_el">
-
-    </div>
-
-    <div id="copyright" class="foo_el">
-        2020 &copy Copyright Ilker Atik
-    </div>
-</footer>
+            <div id="copyright" class="foo_el">
+                2020 &copy Copyright Ilker Atik
+            </div>
+        </footer>
 </body>
 </html>
