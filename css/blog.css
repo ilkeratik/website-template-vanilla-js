@@ -1,9 +1,6 @@
-body{
-}
 
-.container{
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(8px); /* background blur */
+#navbar{
+    font-family: 'Major Mono Display', monospace;
 }
 
 #navbar img{
@@ -50,12 +47,9 @@ body{
     opacity: 0.8;
 }
 
-
-/* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
 }
@@ -90,7 +84,6 @@ body{
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
 }

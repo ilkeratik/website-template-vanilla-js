@@ -11,6 +11,13 @@ body{
     background-size: cover;
 }
 
+.global-container{
+    min-height: 100vh;
+    padding-bottom: 20px;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px); /* background blur */
+}
+
 *{
     box-sizing: border-box;
 }
@@ -31,18 +38,12 @@ hr{
     margin-block-start: 3em;
     margin-block-end: 2em;
 }
+
 h1{
     margin-block-start: 0;
 }
 
-.global-container{
-    min-height: 100vh;
-    padding-bottom: 20px;
-    background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(10px); /* background blur */
-}
-
-/*------------navbar-----------*/
+/*------------intro-----------*/
 
 #intro-container{
     height: 100vh;
@@ -61,9 +62,6 @@ h1{
     to   { opacity: 1; }
 }
 
-#navbar{
-    font-family: 'Major Mono Display', monospace;
-}
 
 .intro-brand img{
     vertical-align:middle;
@@ -153,6 +151,32 @@ h1{
     }
 }
 
+/*------------buttons-----------*/
+
+.button{
+    margin-top: 20px;
+    padding: 20px 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.button:hover{
+    box-shadow: 0 0 5px white;
+}
+
+.button-1{
+    background-color: #0a043c;
+}
+
+.button-2{
+    background-color: #370617;
+}
+
+.shadow-text{
+    text-shadow: 24px 18px 2px #0f4c75;
+    margin-bottom: 60px;
+}
+
 /*------------greet-----------*/
 
 #greet{
@@ -184,36 +208,7 @@ h1{
     margin-bottom: 30px;
 }
 
-
-/*------------buttons-----------*/
-.button{
-    margin-top: 20px;
-    padding: 20px 40px;
-    margin-right: 10px;
-    border-radius: 4px;
-}
-
-.button:hover{
-    box-shadow: 0 0 5px white;
-}
-
-.button-1{
-    background-color: #0a043c;
-}
-
-.button-2{
-    background-color: #370617;
-}
-
-.shadow-text{
-    text-shadow: 24px 18px 2px #0f4c75;
-    margin-bottom: 60px;
-}
-
 /*------------about-----------*/
-#about{
-}
-
 
 #about > img{
     height: 200px;
@@ -243,41 +238,37 @@ h1{
     overflow: auto;
 }
 
-/*------------social-----------*/
-#social >  div{
+/*------------socials-----------*/
+#social > div{
     margin-left: 20px;
     display: inline-block;
 }
 
-#linkedin{
-    margin-left: -20px !important; 
+#social #linkedin{
+    margin-left: -20px;
 }
-
 
 /*------------contact-----------*/
-#contact{
-}
 
-form{
+#contact form{
     padding: 10px 10px;
     display: inline-block;
     border: 3px solid #370617;
     border-radius: 20px;
 }
 
-input{
+#contact input{
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-/* Small devices (landscape phones, 576px and up)*/
+
 @media (min-width: 576px) {
     .menu li{
         font-size: 1rem;
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
 }
@@ -300,7 +291,6 @@ input{
 
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
 }
