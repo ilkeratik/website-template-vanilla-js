@@ -91,7 +91,7 @@ h1{
     position: relative;
     font-size: 1.2em;
     font-weight: bolder;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .menu li:after{
@@ -251,7 +251,7 @@ h1{
 /*------------contact-----------*/
 
 #contact form{
-    padding: 10px 10px;
+    padding: 10px;
     display: inline-block;
     border: 3px solid #370617;
     border-radius: 20px;
