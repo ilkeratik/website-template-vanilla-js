@@ -114,7 +114,7 @@ h1{
 
 .arrow{
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
 }
 
 .arrow span{
@@ -266,6 +266,9 @@ h1{
 @media (min-width: 576px) {
     .menu li{
         font-size: 1rem;
+    }
+    .arrow{
+        bottom: 70px;
     }
 }
 
