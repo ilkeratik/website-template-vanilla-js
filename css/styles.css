@@ -14,9 +14,23 @@ body{
 .global-container{
     min-height: 100vh;
     padding-bottom: 20px;
-    background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(10px); /* background blur */
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(16px); /* background blur */
 }
+.global-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.global-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(49, 21, 94, 0.5); 
+    border-radius: 10px;
+}
+
+.global-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(82, 37, 155, 0.5); 
+}
+
 
 *{
     box-sizing: border-box;
@@ -114,7 +128,7 @@ h1{
 
 .arrow{
     position: absolute;
-    bottom: 40px;
+    bottom: 120px;
 }
 
 .arrow span{
@@ -174,14 +188,13 @@ h1{
 
 .shadow-text{
     text-shadow: 24px 18px 2px #0f4c75;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 /*------------greet-----------*/
 
 #greet{
     padding-top: 70px;
-    margin-bottom: 30px;
 }
 
 #greet > h3{
@@ -190,21 +203,22 @@ h1{
 }
 
 #greet > h1{
-    font-size: 2rem;
-    line-height: 0;
-    margin-block-start: 0.60em;/* line height property */
-    margin-block-end: 0.60em;
+    font-size: 3rem;
+    line-height: 1;
+    margin-block-end: 0.5em;
 }
 
 #greet > h1 > span{
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Major Mono Display', monospace;
     color: #03506f;
 }
 
-#greet > h2{
-    font-size: 0.8rem;
-    font-weight: normal;
+#greet > h4{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-block-start: 0;
+    margin-block-end: 0;
     margin-bottom: 30px;
 }
 
@@ -219,6 +233,8 @@ h1{
 #about > p{
     margin: 10px auto;
     width: 50%;
+    text-align: left;
+    font-size: 1.2em;
 }
 
 /*------------projects-----------*/
@@ -239,13 +255,32 @@ h1{
 }
 
 /*------------socials-----------*/
-#social > div{
-    margin-left: 20px;
-    display: inline-block;
+
+.social{
 }
 
-#social #linkedin{
-    margin-left: -20px;
+.social a {
+	text-decoration: none;
+}
+.social .fa-stack {
+	width: 2.2em;
+	margin-bottom: 1em;
+	margin-right: 0.2em;
+	font-size: 1.6em;
+}
+.social .fa-stack .fa-stack-1x {
+    margin-top: 0.33em;
+    color: #fff;
+    border: 1px #fff solid;
+	transition: all 0.2s ease;
+}
+.social .fa-stack .fa-stack-2x {
+	color: transparent;
+	transition: all 0.2s ease;
+}
+.social .fa-stack:hover .fa-stack-1x {
+	color: #613aee;
+    background-color: rgb(253, 253, 253);
 }
 
 /*------------contact-----------*/
@@ -267,13 +302,10 @@ h1{
     .menu li{
         font-size: 1rem;
     }
-    .arrow{
-        bottom: 70px;
-    }
+    
 }
 
 @media (min-width: 768px) {
-
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -295,7 +327,9 @@ h1{
 }
 
 @media (min-width: 1200px) {
-
+    .arrow{
+        bottom: 30px;
+    }
 }
 
 
