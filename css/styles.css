@@ -17,18 +17,18 @@ body{
     background: rgba(0,0,0,0.3);
     backdrop-filter: blur(16px); /* background blur */
 }
-.global-container::-webkit-scrollbar {
-    width: 12px;
+/* scroolbar */
+body::-webkit-scrollbar {
+    width: 13px;
 }
 
-.global-container::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(49, 21, 94, 0.5); 
-    border-radius: 10px;
+body::-webkit-scrollbar-track {
+    background-color: #0f123d;
 }
 
-.global-container::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(82, 37, 155, 0.5); 
+    -webkit-box-shadow: inset 0px 0px 7px 0px rgb(145 143 173);
 }
 
 
