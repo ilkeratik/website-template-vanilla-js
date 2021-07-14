@@ -203,20 +203,21 @@ h1{
 }
 
 #greet > h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1;
     margin-block-end: 0.5em;
 }
 
 #greet > h1 > span{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Major Mono Display', monospace;
     color: #03506f;
 }
 
 #greet > h4{
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 400;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-bottom: 30px;
