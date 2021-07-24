@@ -11,6 +11,16 @@ body{
     background-size: cover;
 }
 
+#progress-bar {
+    --scrollAmount: 0%;
+    
+    background-image: linear-gradient(120deg, #5744aa 0%, #8fe0f4 100%);
+    width: var(--scrollAmount);
+    height: 25px;
+    position: fixed;
+    top: 0;
+  }
+
 .global-container{
     min-height: 100vh;
     padding-bottom: 20px;
