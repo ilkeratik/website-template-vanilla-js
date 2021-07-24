@@ -2,7 +2,7 @@
 body{
     margin: 0;
     color: white;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
 
     background-image: url("../img/space.webp");
@@ -13,10 +13,9 @@ body{
 
 #progress-bar {
     --scrollAmount: 0%;
-    
-    background-image: linear-gradient(120deg, #5744aa 0%, #8fe0f4 100%);
+    background-image: linear-gradient(90deg, #44b3df  0%,  #6c0d92 100%);
     width: var(--scrollAmount);
-    height: 25px;
+    height: 10px;
     position: fixed;
     top: 0;
   }
@@ -33,12 +32,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #0f123d;
+    background-image: linear-gradient(0deg, #931fb1  0%,  #221370 100%);
 }
 
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0px 0px 7px 0px rgb(145 143 173);
+    background-image: linear-gradient(0deg, #931fb1  0%,  #482c96 100%);
 }
 
 
@@ -147,7 +146,7 @@ h1{
     height: 30px;
     border-right: 3px solid;
     border-bottom: 3px solid;
-    border-color: #0077b6;
+    border-color: #3ca0c7;
     transform: rotate(45deg);
     margin: -10px;
     animation: arrows 1.5s infinite;
@@ -225,9 +224,8 @@ h1{
 }
 
 #greet > h4{
-    font-size: 1.2em;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-bottom: 30px;
