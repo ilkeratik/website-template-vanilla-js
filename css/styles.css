@@ -28,16 +28,16 @@ body{
 }
 /* scroolbar */
 body::-webkit-scrollbar {
-    width: 13px;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-track {
-    background-image: linear-gradient(0deg, #931fb1  0%,  #221370 100%);
+    background-image: linear-gradient(0deg, #513672  0%,  #372274 100%);
 }
 
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: linear-gradient(0deg, #931fb1  0%,  #482c96 100%);
+    background-image: linear-gradient(0deg, #684494  0%,  #5c3db1 100%);
 }
 
 
