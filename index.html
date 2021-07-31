@@ -28,7 +28,7 @@
 <div id="progress-bar"></div>
 <div class="global-container">
     <section id="intro-container">
-        <div class="intro-brand">
+        <div class="fade intro-brand">
             <a href="index.html">
                 <img src="img/kendim.webp" alt="photo">
                 <h1>ilker Atik</h1>
@@ -61,7 +61,7 @@
 
     <section id="main-content">
 
-        <section id="greet">
+        <section id="greet" class="fade">
             <h3>Hello!</h3>
             <h1>I'm <span>ilker Atik</span></h1>
             <h4>A Freelancer Web Developer, Software Engineer</h4>
@@ -69,7 +69,7 @@
         </section>
 
         <hr>
-        <div id="about">
+        <div id="about" class="fade">
             <h1 class="shadow-text">About Me</h1>
             <br>
             <p>I'm a software engineering student at Fırat University.<br>I had been in Portugal for a year within the
@@ -78,7 +78,7 @@
                 to play chess and table tennis and listen to music!
             </p>
         </div>
-        <div class="social">
+        <div class="fade social">
             <span class="fa-stack">
                 <a href="https://www.linkedin.com/in/ilkeratik/">
                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -100,10 +100,10 @@
         </div>
 
         <hr>
-        <div id="projects">
+        <div id="projects" class="fade">
             <h1 class="shadow-text">Projects</h1>
 
-            <div class="single-prj clearfix">
+            <div class="fade single-prj clearfix">
                 <a href="https://www.hazaryachting.com/">
                     <img src="img/hzr.webp" alt="cv">
                 </a>
@@ -116,7 +116,7 @@
         </div>
 
         <hr>
-        <div id="contact">
+        <div id="contact" class="fade">
             <h1 class="shadow-text">Contact</h1>
             <form class="contact-form">
                 <label for="fname">Your Name</label><br>
@@ -139,17 +139,20 @@
     </section> <!-- end of main content -->
     </div>
 <footer>
-    <div class="footer-p1">
+    <div class="footer-p1 fade">
 
     </div>
-    <div class="footer-p2">
+    <div class="footer-p2 fade">
 
     </div>
 
     <div class="copyright">
         2021 &copy Copyright Ilker Atik
     </div>
-
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </footer>
 </body>
