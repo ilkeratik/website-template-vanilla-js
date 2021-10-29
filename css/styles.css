@@ -301,7 +301,14 @@ h1{
 #contact form{
     padding: 10px;
     display: inline-block;
-    border: 3px solid #370617;
+    border-width: 10px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to left, 
+      #2a1b5a, 
+      #1197af
+    ) 1 30%;
     border-radius: 20px;
 }
 
