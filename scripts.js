@@ -53,8 +53,27 @@ let processScroll = () => {
     }
     );
 */
-let cardHover = () => {
+
+let fetchProjectData= ()=>{
     
-
-
+    $.getJSON("projects_data.json", function(data){
+        $.each(data, function(propName, propVal) {
+            propVal.forEach((el)=>{
+                $("#projects").append(
+                `<div class="fade single-prj clearfix">\
+                    <a href="https://picsum.photos/320/320">\
+                        <img src="https://picsum.photos/320/320" alt="cv">\
+                        </a><div class="prj-name">\
+                            <h1> ${el.title}</h1>\
+                        </div><div class="details">\
+                            ${el.stack.map(function (key) {
+                                return `<i class=\"tech\">${key}</i>`           
+                            }).join("")} \
+                        </div>\
+                </div>`);
+                console.log(el.title);
+            })
+          });
+    });
 }
+fetchProjectData();

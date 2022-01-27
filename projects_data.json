@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "title": "Deneme",
+            "stack": ["js","go","php"],
+            "date": ""
+        },
+        {
+            "title": "Parsel Dashboard",
+            "stack": ["java","javafx","arduino","serialcomm"],
+            "date": ""
+        },{
+            "title": "UYZ",
+            "stack": ["object-detection","YOLO","image-processing"],
+            "date": ""
+        },{
+            "title": "Hazar",
+            "stack": ["Wordpress","HTML","CSS"],
+            "date": ""
+        }
+]
+}

@@ -255,30 +255,29 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .single-prj{
     overflow: hidden;
     position: relative;
-    margin: 0 10px;
+    margin: 15px;
     
 }
 .single-prj:hover .details{
-    transform: perspective(2000px) rotateY(0deg);
+    bottom: 20px;
 }
 .single-prj:hover .prj-name{
     bottom: 100px;
     
 }
 .single-prj:hover a img{
-    border: 60px solid #2a1b5a;
-    filter: grayscale(100%);
+    border: 60px solid #000000;
     transition: all 1000ms ease;
 }
 
 .single-prj a img{
     height: 320px;
     width: 320px;
-    filter: grayscale(0%) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.5));
     border-radius: 5px;
 }
 
@@ -291,49 +290,22 @@ h1{
     width: 100%;
 }
 .details{
-    background: rgba(0, 0, 0, 0.774);
+    background: rgba(0, 0, 0, 0.822);
     padding: 10px;
     width: 100%;
     position: absolute;
-    bottom: 0;
-    transition: 2s;
-    transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
+    bottom: -100px;
+    transition: bottom 0.8s linear;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
-
-
-.card {
-    transform: translate(-50%,-50%);
-    width: 360px;
-    height: auto;
-    background: #000;
+.details .tech{
+    padding: 5px;
+    margin: 5px 3px;
+    background: linear-gradient(0deg, #17cbeb44  0%,  #3c27813d 100%);
 }
-.card .image {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.card .image img {
-    width: 100%;
-    transition: .5s;
-}
-.card:hover .image img {
-    opacity: .5;
-    transform: translateX(30%);/*100%*/
-}
-.card .details {
-    width: 100%;/*100%*/
-    height: 100%;
-    background: #ffc107;
-    transition: .5s;
-    transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
-}
-.card:hover .details {
-    transform: perspective(2000px) rotateY(0deg);
-}
-
 
 /*------------socials-----------*/
 
