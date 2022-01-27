@@ -245,27 +245,95 @@ h1{
 
 #about > p{
     margin: 10px auto;
-    width: 50%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
     font-size: 1.2em;
 }
 
 /*------------projects-----------*/
+#projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .single-prj{
-    text-align: left;
-    margin: 0 20%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 10px;
+    
+}
+.single-prj:hover .details{
+    transform: perspective(2000px) rotateY(0deg);
+}
+.single-prj:hover .prj-name{
+    bottom: 100px;
+    
+}
+.single-prj:hover a img{
+    border: 60px solid #2a1b5a;
+    filter: grayscale(100%);
+    transition: all 1000ms ease;
 }
 
 .single-prj a img{
-    margin: 0 20px;
-    height: 100px;
-    max-width: 100%;
-    border-radius: 30%;
+    height: 320px;
+    width: 320px;
+    filter: grayscale(0%) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
 }
 
-.single-prj > p{
-    overflow: auto;
+.prj-name{
+    position: absolute;
+    bottom: 0;
+    transition: bottom 0.8s linear;
+    background: rgba(0, 0, 0, 0.774);
+    padding: 10px;
+    width: 100%;
 }
+.details{
+    background: rgba(0, 0, 0, 0.774);
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: 2s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+
+
+
+.card {
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: auto;
+    background: #000;
+}
+.card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card .image img {
+    width: 100%;
+    transition: .5s;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card .details {
+    width: 100%;/*100%*/
+    height: 100%;
+    background: #ffc107;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+
 
 /*------------socials-----------*/
 
@@ -336,13 +404,6 @@ h1{
         clear: both;
     }
 
-    .single-prj:nth-child(odd) img{
-        float: left;
-    }
-
-    .single-prj:nth-child(even) img{
-        float: right;
-    }
 
 }
 

@@ -23,18 +23,11 @@ let processScroll = () => {
             var windowBottom = $(window).scrollTop() + $(window).innerHeight();
             
             if ( objectTop < windowBottom ) {
-                if ( objectTop < windowBottom - animation_height ) {
                     $(this).css( {
                         transition: 'opacity 0.5s linear',
                         opacity: 1
                     } );
 
-                } else {
-                    $(this).css( {
-                        transition: 'opacity 0.5s linear',
-                        opacity: (windowBottom - objectTop) * ratio
-                    } );
-                }
             } else {
                 $(this).css( 'opacity', 0 );
             }
@@ -44,3 +37,24 @@ let processScroll = () => {
     fade();
     $(window).scroll(function() {fade();});
 });
+
+/*$('.single-prj').hover( ()=>{
+        console.log($(this));
+        $(this).find('.details').css({
+            color: 'red',
+            transform: 'perspective(2000px) rotateY(0deg)'
+        })
+    },
+    ()=>{
+        $(this).find('.details').css({
+            color: 'red',
+            transform: 'perspective(2000px) rotateY(0deg)'
+        })
+    }
+    );
+*/
+let cardHover = () => {
+    
+
+
+}
