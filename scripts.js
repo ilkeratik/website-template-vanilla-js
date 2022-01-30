@@ -71,9 +71,28 @@ let fetchProjectData= ()=>{
                             }).join("")} \
                         </div>\
                 </div>`);
-                console.log(el.title);
             })
           });
-    });
+          hoverPos();
+        });
 }
 fetchProjectData();
+
+let hoverPos = ()=>{
+    $(".single-prj").hover(function (){
+        let $this = $(this);
+        
+        $this.find(".prj-name").css({
+            bottom: `${$this.find(".details").height()+20}px`
+        })
+
+        console.log($this.find(".prj-name").css("bottom"))
+    },function (){
+        let $this = $(this);
+            
+        $this.find(".prj-name").css({
+            bottom: 0
+        })
+    })
+
+}

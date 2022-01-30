@@ -264,38 +264,39 @@ h1{
     
 }
 .single-prj:hover .details{
-    bottom: 20px;
+    bottom: 0;
 }
 .single-prj:hover .prj-name{
     bottom: 100px;
     
 }
 .single-prj:hover a img{
-    border: 60px solid #000000;
-    transition: all 1000ms ease;
+    border: 0 solid #000000;
+    transition: border 0.6s ease-in;
 }
 
 .single-prj a img{
     height: 320px;
     width: 320px;
     border-radius: 5px;
+    border: 60px solid #000000;
 }
 
 .prj-name{
     position: absolute;
     bottom: 0;
-    transition: bottom 0.8s linear;
+    transition: bottom 0.6s linear;
     background: rgba(0, 0, 0, 0.774);
     padding: 10px;
     width: 100%;
 }
 .details{
-    background: rgba(0, 0, 0, 0.822);
+    background: #25252596;
     padding: 10px;
     width: 100%;
     position: absolute;
     bottom: -100px;
-    transition: bottom 0.8s linear;
+    transition: bottom 0.7s linear;
     display: flex;
     flex-direction: row;
     justify-content: center;
