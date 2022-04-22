@@ -85,13 +85,14 @@ h1{
 
 .intro-brand img{
     vertical-align:middle;
-    height: 80px;
-    border-radius: 60px;
+    height: 60px;
+    border-radius: 10px;
 }
 
 .intro-brand h1{
     margin-block-end: 0;
     display: inline-block;
+    font-size: 0.9em;
     vertical-align:middle;
 }
 
@@ -112,7 +113,7 @@ h1{
 
 .menu li{
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 0.7em;
     position: relative;
     font-weight: bolder;
     padding: 10px;
@@ -311,8 +312,6 @@ h1{
 
 /*------------socials-----------*/
 
-.social{
-}
 
 .social a {
 	text-decoration: none;
@@ -337,7 +336,19 @@ h1{
 	color: #613aee;
     background-color: rgb(253, 253, 253);
 }
-
+.extra-link{
+    border-style: solid;
+    border-width: thin;
+    padding: 10px;
+}
+.extra-link:hover {
+    color: #613aee;
+    transition: all 0.2s ease;
+    background-color:rgb(253, 253, 253);
+}
+.extra-link:hover a{
+    color: #613aee;
+}
 /*------------contact-----------*/
 
 #contact form{
